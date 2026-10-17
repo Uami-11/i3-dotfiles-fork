@@ -1,3 +1,4 @@
+fastfetch
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
@@ -21,6 +22,7 @@ export npm_config_prefix="$HOME/.local"
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.dotnet/tools:$HOME/.local/bin:$HOME/.local/share/uv/tools:$HOME/go/bin:$HOME/.cargo/bin:$DOTNET_ROOT:$DOTNET_ROOT/tools:$PATH
 export GPG_TTY=$(tty)
 export TMUX_SESSION=RCH
+export TERMINAL=kitty
 DEFAULT_USER=uami
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'

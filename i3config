@@ -45,7 +45,7 @@ bindsym Print exec maim -i $(xdotool getactivewindow) --quality 10 $HOME/Picture
 bindsym $mod+Print exec sh -c '$HOME/.local/share/scripts/screenshot-monitor.sh "$HOME/Pictures/$(date +%m-%d_%H-%M-%S_shot).png" && notify-send "$HOME/Pictures/$(date +%m-%d_%H-%M-%S_shot).png"'
 bindsym $mod+d exec rofi -show run
 bindsym $mod+x exec rofimoji --selector rofi --max-recent 0
-bindsym $mod+Return exec ghostty
+bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+r restart
 bindsym $mod+Control+l exec slock

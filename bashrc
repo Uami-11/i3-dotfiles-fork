@@ -48,5 +48,6 @@ else
   export EDITOR='nvim'
 fi
 export ARCHFLAGS="-arch x86_64"
+export TERMINAL=kitty
 
 alias vi='nvim'

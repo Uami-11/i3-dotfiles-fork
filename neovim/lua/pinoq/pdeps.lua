@@ -27,6 +27,10 @@ add("Decodetalkers/csharpls-extended-lsp.nvim")
 add("b0o/schemastore.nvim")
 add("oribarilan/lensline.nvim")
 
+add("stevearc/conform.nvim")
+add("mfussenegger/nvim-lint")
+
+add("folke/snacks.nvim")
 
 add("RRethy/base16-nvim")
 add("lukas-reineke/indent-blankline.nvim")

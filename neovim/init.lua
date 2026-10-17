@@ -69,12 +69,15 @@ if vim.g.vscode then
 else
     require("pinoq.pdeps")
     require("pinoq.pstyle")
+    require("pinoq.psnacks")
     require("pinoq.pdap")
     require("pinoq.plsp")
+    require("pinoq.pfmt")
     require("pinoq.ptst")
     require("pinoq.pcomp")
     require("pinoq.pmanip")
     require("pinoq.ptui")
     require("pinoq.pextra")
     require("pinoq.pgui")
+    require("pinoq.pkeys")
 end

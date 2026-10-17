@@ -4,17 +4,28 @@ local treesitter_ctx = require("treesitter-context")
 
 treesitter.setup({ install_dir = vim.fn.stdpath("data") .. "/site" })
 
---[[ treesitter.install({
+treesitter.install({
     "python",
+    "go",
+    "c_sharp",
+    "c",
+    "cpp",
+    "java",
+    "javascript",
+    "tsx",
+    "html",
+    "css",
     "bash",
+    "lua",
+    "vim",
+    "vimdoc",
     "json",
-    "toml",
-    "xml",
     "yaml",
+    "toml",
     "markdown",
     "markdown_inline",
-    "vimdoc"
-}) --]]
+    "sql",
+})
 
 treesitter_ctx.setup({
     enable = true,

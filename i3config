@@ -43,7 +43,7 @@ exec_always --no-startup-id xinput set-prop "ELAN1200:00 04F3:303E Touchpad" "li
 
 bindsym Print exec maim -i $(xdotool getactivewindow) --quality 10 $HOME/Pictures/$(date +%m-%d_%H-%M-%S_shot).png -m 1 && notify-send $(date "+$HOME/Pictures/%m-%d_%H-%M-%S_shot.png")
 bindsym $mod+Print exec sh -c '$HOME/.local/share/scripts/screenshot-monitor.sh "$HOME/Pictures/$(date +%m-%d_%H-%M-%S_shot).png" && notify-send "$HOME/Pictures/$(date +%m-%d_%H-%M-%S_shot).png"'
-bindsym $mod+p exec rofi -show run
+bindsym $mod+d exec rofi -show run
 bindsym $mod+x exec rofimoji --selector rofi --max-recent 0
 bindsym $mod+Return exec ghostty
 bindsym $mod+Shift+q kill

@@ -65,28 +65,9 @@ mn_starter.setup({
             { name = "Quit",    action = "q",          section = "Actions" },
         }
     },
-    header = [=[
-from  queue  import  Queue  from  typing import Any from btree import Node type
-Coordinate  = tuple[int, int] def visualize[T](root: Node[T]) -> None: val_coor
-=  get_coordinates(root)  val_size = max(max(len(str(i[0])) for i in val_coor),
-5)  grid_hei  =  (root_hei := get_height(root)) * 2 - 1 grid_mid = (grid_wid :=
-2**root_hei)  //  2  grid = [[" " * val_size for _ in range(grid_wid)] for _ in
-range(grid_hei)]  for  i  in  val_coor:  val,  y,  x  = i[0], abs(i[1][1]) * 2,
-grid_mid - i[1][0] grid[y][x] = f"({str(val).rjust(val_size - 2, "_")})" if y <
-grid_hei   -   1:   grid[y  +  1][x]  =  "/"  +  grid[y  +  1][x][1:-1]  +  "\"
-print("\n".join(["".join(col)  for  col in grid])) def get_coordinates[T](root:
-Node[T])  ->  set[tuple[T, Coordinate]]: q: Queue[tuple[Node[T], Coordinate]] =
-Queue()  coordinates  = set() q.put((root, (0, 0))) while not q.empty(): node =
-q.get()   coordinates.add((node[0].value,   node[1]))   left_height   =   2  **
-(get_height(left)   -  1)  if  (left  :=  node[0].left)  is  not  None  else  0
-right_height  = 2 ** (get_height(right) - 1) if (right := node[0].right) is not
-None  else  0  height  =  max(left_height,  right_height)  if left is not None:
-q.put((left,  (node[1][0]  +  height,  node[1][1]  - 1))) if right is not None:
-q.put((right,  (node[1][0]  -  height, node[1][1] - 1))) return coordinates def
-get_height(root:  Node[Any]  | None, current: int = 0) -> int: if root is None:
-return   current   current  +=  1  return  max(get_height(root.left,  current),
-get_height(root.right, current))
-    ]=],
+    header = [[
+      nvim
+    ]],
     footer = "",
     content_hooks = nil,
     query_updaters = "abcdefghijklmnopqrstuvwxyz0123456789_-.",

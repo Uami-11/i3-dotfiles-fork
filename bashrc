@@ -5,7 +5,7 @@ case $- in
     *) return;;
 esac
 
-export OSH='/home/amir/.oh-my-bash'
+export OSH='/home/uami/.oh-my-bash'
 # OSH_THEME="binaryanomaly"
 OSH_THEME="half-life"
 # OSH_THEME="tonka"

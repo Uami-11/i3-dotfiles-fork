@@ -1,7 +1,7 @@
 [global]
     frame_width = 1
     origin = bottom-right
-    font = Libron Regular 10
+    font = Agave Nerd Font Regular 10
     markup = yes
     format = "%s\n%n\n%b"
     stack_duplicates = false

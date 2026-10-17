@@ -1,7 +1,7 @@
 configuration {
     modei: ["window","drun","run"];
     display-run: "";
-    font: "Libron Regular 10";
+    font: "Agave Nerd Font Regular 10";
     fixed-num-lines: true;
     show-icons: false;
     terminal: "kitty";

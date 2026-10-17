@@ -1,7 +1,7 @@
 set $mod Mod4
 floating_modifier $mod
 
-font pango: Libron Regular 9
+font pango: Agave Nerd Font Regular 9
 
 focus_follows_mouse yes
 # smart_gaps on
